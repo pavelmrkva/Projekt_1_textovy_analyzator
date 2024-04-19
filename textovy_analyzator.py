@@ -85,18 +85,12 @@ number_count = 0
 number_sum = 0
 
 for word in analyze:
-    
-    if word.istitle() and word.isalpha():
+    if word.istitle():
         title_case += 1
-       
     elif word.isupper() and word.isalpha():
         upper_case += 1
-        
-
-    elif word.islower() and word.isalpha():
+    elif word.islower():
         lower_case += 1
-        
-
     elif word.isnumeric():
         number_count += 1
         number_sum += int(word)
